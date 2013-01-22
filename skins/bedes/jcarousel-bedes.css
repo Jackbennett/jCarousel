@@ -1,0 +1,150 @@
+
+/**
+ * A simple sample carousel skin.
+ *
+ * This skin includes a sample arrows.svg file that may be edited with the free
+ * illustration application InkScape (http://inkscape.org).
+ *
+ * CSS and icons by Nathan Haug.
+ */
+
+.jcarousel-skin-bedes {
+  text-align: center;
+}
+
+.jcarousel-skin-bedes .jcarousel-container-horizontal {
+	border:2px solid rgb(238, 190, 63);
+  background: rgb(208, 155, 14) url(yellowBg.gif) left top repeat-x;
+}
+
+.jcarousel-skin-bedes .jcarousel-container-vertical {
+  width: 102px;
+  height: 440px;
+  padding: 40px 20px;
+  margin: auto;
+}
+
+.jcarousel-skin-bedes .jcarousel-clip-horizontal {
+	width: 90%;
+	margin:0 auto;
+  overflow: hidden;
+}
+
+.jcarousel-skin-bedes .jcarousel-clip-vertical {
+  height: 440px;
+  overflow: hidden;
+}
+
+.jcarousel-skin-bedes .jcarousel-item {
+	width: 270px;
+	height: 190px;
+  margin-right: 5px;
+}
+	.jcarousel-skin-bedes .jcarousel-item-1 {
+		margin-left:5px;
+	}
+
+.jcarousel-skin-bedes .jcarousel-item-horizontal {}
+
+.jcarousel-skin-bedes .jcarousel-item-vertical {}
+
+.jcarousel-skin-bedes .jcarousel-item-placeholder {
+  background: #fff url(throbber.gif) no-repeat center center;
+  color: #000;
+}
+
+/**
+ * Buttons
+ */
+.jcarousel-skin-bedes .jcarousel-next,
+.jcarousel-skin-bedes .jcarousel-prev {
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+	  top: 87px;
+  background-image: url(arrows.png);
+}	
+.jcarousel-skin-bedes .jcarousel-next:before,
+.jcarousel-skin-bedes .jcarousel-prev:before {
+	width: 47px;
+	height: 190px;
+	margin: -78px 0 0 -7px;
+	position: absolute;
+		top: 0;
+	content: "";
+	display: block;
+}
+
+.jcarousel-skin-bedes .jcarousel-next-disabled,
+.jcarousel-skin-bedes .jcarousel-prev-disabled {
+  display: none;
+}
+
+/**
+ * Horizontal Buttons
+ */
+.jcarousel-skin-bedes .jcarousel-prev-horizontal {
+  left: 0;
+  background-position: 0 0;
+}
+.jcarousel-skin-bedes .jcarousel-prev-horizontal:hover {
+  background-position: -32px 0;
+}
+.jcarousel-skin-bedes .jcarousel-prev-horizontal:active {
+  background-position: -64px 0;
+}
+
+.jcarousel-skin-bedes .jcarousel-next-horizontal {
+  right: 0;
+  background-position: 0 -32px;
+}
+.jcarousel-skin-bedes .jcarousel-next-horizontal:hover {
+  background-position: -32px -32px;
+}
+.jcarousel-skin-bedes .jcarousel-next-horizontal:active {
+  background-position: -64px -32px;
+}
+
+/**
+ * Vertical Buttons
+ */
+.jcarousel-skin-bedes .jcarousel-prev-vertical {
+  left: 55px;
+  background-position: 0 -64px;
+}
+.jcarousel-skin-bedes .jcarousel-prev-vertical:hover {
+  background-position: -32px -64px;
+}
+.jcarousel-skin-bedes .jcarousel-prev-vertical:active {
+  background-position: -64px -64px;
+}
+
+.jcarousel-skin-bedes .jcarousel-next-vertical {
+  left: 55px;
+  background-position: 0 -96px;
+}
+.jcarousel-skin-bedes .jcarousel-next-vertical:hover {
+  background-position: -32px -96px;
+}
+.jcarousel-skin-bedes .jcarousel-next-vertical:active {
+  background-position: -64px -96px;
+}
+
+.jcarousel-skin-bedes .jcarousel-navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.jcarousel-skin-bedes .jcarousel-navigation li {
+  display: inline;
+  margin: 0 2px 0 0;
+  padding: 0;
+  background: none;
+}
+
+.jcarousel-skin-bedes .jcarousel-navigation li.active a {
+  font-weight: bold;
+  text-decoration: none;
+}
+
